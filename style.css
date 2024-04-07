@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#title {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+}
+
+#navigation {
+  min-width: 200px;
+
+  padding: 20px;
+  flex: 0 0 200px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#navigation a {
+  color: white;
+  display: block; /* Make links block to fill horizontal space */
+  margin-bottom: 10px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+}
+
+#navigation a:hover {
+  color: gray;
+  text-decoration: underline; /* Underline on hover */
+}
+
+#content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
